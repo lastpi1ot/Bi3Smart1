@@ -110,7 +110,7 @@ function Navbar() {
             </div>
         </nav>
         
-        <hr className="border-gray-200 sm:mx-auto dark:border-gray-700" />
+     
         
         <nav className='Scroll flex justify-center space-x-1'>
             {pages?.map((item,key)=>(
