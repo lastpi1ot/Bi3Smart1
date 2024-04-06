@@ -22,10 +22,7 @@ function Navbar() {
             "title": "Products",
             "link": "/products"
         },
-        {
-            "title": "Home",
-            "link": "/"
-        },
+        
         {
             "title": "Contact",
             "link": "/contact"
@@ -70,11 +67,11 @@ function Navbar() {
 
 
   return (
-    <div className='fixed top-0 left-0 w-full  z-50 bg-gray-800 text-white px-6 md:px-16'>
-        <nav className='px-4 relative w-full flex justify-between items-center py-6'>
+    <div className='fixed top-0 left-0 w-full   z-50 bg-gray-800 text-white px-6  '>
+        <nav className='px-4 relative w-full flex justify-between items-center '>
             <Link to="/" ><img className='w-32 ' src="../images/logo.png" alt="logo" />  </Link>
 
-            <div className='absolute left-0 right-0 mx-auto flex space-x-3 items-center bg-gray-600 rounded-full w-1/3 px-4 py-1'>
+            <div className='absolute left-0 right-0 mx-auto flex space-x-3 items-center bg-gray-600 rounded-full w-1/3 px-4 '>
                 <CiSearch size={24} />
                 <input
                     className='bg-transparent w-full outline-none py-1' 
@@ -121,7 +118,7 @@ function Navbar() {
                         onMouseLeave={()=> setOpenCat(false)}
                         key={key}
                     >
-                        <button className='px-6 py-3  rounded-sm hover:bg-blue-300 transition-all  flex items-center space-x-2'>
+                        <button className='px-6 my-1 py-1  rounded-sm hover:bg-blue-300 transition-all  flex items-center space-x-2'>
                             <p> Categorie </p>
                             <TfiAngleDown />
                         </button>
@@ -136,7 +133,7 @@ function Navbar() {
                         </ul>
                     </div>
                 :
-                    <Link to={item.link} key={key} className='px-6 py-3 rounded-sm hover:bg-blue-300 transition-all '>
+                    <Link to={item.link} key={key} className='px-6 my-1 py-1 rounded-sm hover:bg-blue-300 transition-all '>
                         {item.title}
                     </Link>
             ))}
