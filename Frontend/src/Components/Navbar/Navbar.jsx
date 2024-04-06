@@ -70,9 +70,9 @@ function Navbar() {
 
 
   return (
-    <div className='fixed top-0 left-0 w-full z-50 bg-gray-800 text-white px-6 md:px-16'>
+    <div className='fixed top-0 left-0 w-full  z-50 bg-gray-800 text-white px-6 md:px-16'>
         <nav className='px-4 relative w-full flex justify-between items-center py-6'>
-            <Link to="/" className='text-2xl font-medium'> Logo </Link>
+            <Link to="/" ><img className='w-32 ' src="../images/logo.png" alt="logo" />  </Link>
 
             <div className='absolute left-0 right-0 mx-auto flex space-x-3 items-center bg-gray-600 rounded-full w-1/3 px-4 py-1'>
                 <CiSearch size={24} />
@@ -121,7 +121,7 @@ function Navbar() {
                         onMouseLeave={()=> setOpenCat(false)}
                         key={key}
                     >
-                        <button className='px-6 py-3 rounded-sm hover:bg-blue-300 transition-all  flex items-center space-x-2'>
+                        <button className='px-6 py-3  rounded-sm hover:bg-blue-300 transition-all  flex items-center space-x-2'>
                             <p> Categorie </p>
                             <TfiAngleDown />
                         </button>
